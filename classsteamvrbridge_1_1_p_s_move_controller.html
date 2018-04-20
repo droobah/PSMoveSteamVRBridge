@@ -138,9 +138,12 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><b>getPSMControll
 <tr class="memitem:a4df61f2053b2e962659ad50d9e1e89cf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4df61f2053b2e962659ad50d9e1e89cf"></a>
 PSMControllerType&#160;</td><td class="memItemRight" valign="bottom"><b>getPSMControllerType</b> () const </td></tr>
 <tr class="separator:a4df61f2053b2e962659ad50d9e1e89cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5b4219926211eb97c5a40b1108cdfa9a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5b4219926211eb97c5a40b1108cdfa9a"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateRumbleState</b> (float durationSecs)</td></tr>
-<tr class="separator:a5b4219926211eb97c5a40b1108cdfa9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86e83870364440fb730a332b7e28499e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a86e83870364440fb730a332b7e28499e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setPendingPulseDurationSecs</b> (float durationSecs)</td></tr>
+<tr class="separator:a86e83870364440fb730a332b7e28499e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad095925399a353331e7b0e4bf8f071b4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad095925399a353331e7b0e4bf8f071b4"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateRumbleState</b> ()</td></tr>
+<tr class="separator:ad095925399a353331e7b0e4bf8f071b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_trackable_device"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_trackable_device')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_trackable_device.html">TrackableDevice</a></td></tr>
 <tr class="memitem:a7e9d7059a77ecf87d95009687f225951 inherit pub_methods_class_trackable_device"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7e9d7059a77ecf87d95009687f225951"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>EnterStandby</b> () override</td></tr>
@@ -314,9 +317,9 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>m_fBatteryChargeFrac
 <tr class="memitem:afc3c2a305173884bcfd45eac6d524cb1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afc3c2a305173884bcfd45eac6d524cb1"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bRumbleSuppressed</b></td></tr>
 <tr class="separator:afc3c2a305173884bcfd45eac6d524cb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3e22ce517b9dca417945b749f4bb3fec"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3e22ce517b9dca417945b749f4bb3fec"></a>
-uint16_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_pendingHapticPulseDuration</b></td></tr>
-<tr class="separator:a3e22ce517b9dca417945b749f4bb3fec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a736a593ce0bd1e23bbc366c7bff24e2e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a736a593ce0bd1e23bbc366c7bff24e2e"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>m_pendingHapticPulseDurationSecs</b></td></tr>
+<tr class="separator:a736a593ce0bd1e23bbc366c7bff24e2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2c1fec2b850815707d9a9529043f0fa5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2c1fec2b850815707d9a9529043f0fa5"></a>
 std::chrono::time_point<br class="typebreak"/>
 &lt; std::chrono::high_resolution_clock &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_lastTimeRumbleSent</b></td></tr>

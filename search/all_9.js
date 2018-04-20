@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['launchpsmovemonitor',['LaunchPSMoveMonitor',['../classsteamvrbridge_1_1_c_server_driver___p_s_move_service.html#acbe78c1df258253a8bfefdd6d0665c3b',1,'steamvrbridge::CServerDriver_PSMoveService']]],
-  ['logger',['Logger',['../classsteamvrbridge_1_1_logger.html',1,'steamvrbridge']]]
+  ['updatetrackeddevice',['UpdateTrackedDevice',['../class_c_p_s_move_driver_monitor.html#a4fd8eb8992189f8ecc4f08470cdc605c',1,'CPSMoveDriverMonitor']]],
+  ['utils',['Utils',['../classsteamvrbridge_1_1_utils.html',1,'steamvrbridge']]]
 ];

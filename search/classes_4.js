@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['explicitproducer',['ExplicitProducer',['../structmoodycamel_1_1_concurrent_queue_1_1_explicit_producer.html',1,'moodycamel::ConcurrentQueue']]]
+  ['logger',['Logger',['../classsteamvrbridge_1_1_logger.html',1,'steamvrbridge']]]
 ];

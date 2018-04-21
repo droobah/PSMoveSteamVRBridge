@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
-<title>“PSMoveSteamVRBridge”: src/main/cpp/driver/psmovecontroller.h Source File</title>
+<title>“PSMoveSteamVRBridge”: src/main/cpp/driver/ps_move_controller.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -83,11 +83,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="headertitle">
-<div class="title">psmovecontroller.h</div>  </div>
+<div class="title">ps_move_controller.h</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#include &quot;trackabledevice.h&quot;</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#include &quot;trackable_device.h&quot;</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;PSMoveClient_CAPI.h&quot;</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;openvr_driver.h&gt;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
@@ -95,7 +95,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    <span class="comment">/* Trackable PS Move controller. The controller calss bridges the PSMoveService controller to</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">    OpenVR&#39;s tracked device*/</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="classsteamvrbridge_1_1_p_s_move_controller.html">   10</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classsteamvrbridge_1_1_p_s_move_controller.html">PSMoveController</a> : <span class="keyword">public</span> <a class="code" href="class_trackable_device.html">TrackableDevice</a> {</div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="classsteamvrbridge_1_1_p_s_move_controller.html">   10</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classsteamvrbridge_1_1_p_s_move_controller.html">PSMoveController</a> : <span class="keyword">public</span> <a class="code" href="classsteamvrbridge_1_1_trackable_device.html">TrackableDevice</a> {</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;        <span class="comment">/* PSMoveService button IDs*/</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        <span class="keyword">enum</span> ePSButtonID {</div>
@@ -295,9 +295,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">void</span> start_controller_response_callback(<span class="keyword">const</span> PSMResponseMessage *response, <span class="keywordtype">void</span> *userdata);</div>
 <div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;    };</div>
 <div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;}</div>
-<div class="ttc" id="classsteamvrbridge_1_1_i_hand_orientation_solver_html"><div class="ttname"><a href="classsteamvrbridge_1_1_i_hand_orientation_solver.html">steamvrbridge::IHandOrientationSolver</a></div><div class="ttdef"><b>Definition:</b> facinghandsolver.h:5</div></div>
-<div class="ttc" id="class_trackable_device_html"><div class="ttname"><a href="class_trackable_device.html">TrackableDevice</a></div><div class="ttdef"><b>Definition:</b> trackabledevice.h:9</div></div>
-<div class="ttc" id="classsteamvrbridge_1_1_p_s_move_controller_html"><div class="ttname"><a href="classsteamvrbridge_1_1_p_s_move_controller.html">steamvrbridge::PSMoveController</a></div><div class="ttdef"><b>Definition:</b> psmovecontroller.h:10</div></div>
+<div class="ttc" id="classsteamvrbridge_1_1_i_hand_orientation_solver_html"><div class="ttname"><a href="classsteamvrbridge_1_1_i_hand_orientation_solver.html">steamvrbridge::IHandOrientationSolver</a></div><div class="ttdef"><b>Definition:</b> facing_handsolver.h:5</div></div>
+<div class="ttc" id="classsteamvrbridge_1_1_trackable_device_html"><div class="ttname"><a href="classsteamvrbridge_1_1_trackable_device.html">steamvrbridge::TrackableDevice</a></div><div class="ttdef"><b>Definition:</b> trackable_device.h:11</div></div>
+<div class="ttc" id="classsteamvrbridge_1_1_p_s_move_controller_html"><div class="ttname"><a href="classsteamvrbridge_1_1_p_s_move_controller.html">steamvrbridge::PSMoveController</a></div><div class="ttdef"><b>Definition:</b> ps_move_controller.h:10</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

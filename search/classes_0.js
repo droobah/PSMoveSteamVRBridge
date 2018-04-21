@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['axis',['Axis',['../struct_trackable_device_1_1_axis.html',1,'TrackableDevice']]]
+  ['axis',['Axis',['../structsteamvrbridge_1_1_trackable_device_1_1_axis.html',1,'steamvrbridge::TrackableDevice']]]
 ];

@@ -37,6 +37,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -70,7 +71,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -81,7 +82,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>steamvrbridge</b></li><li class="navelem"><a class="el" href="classsteamvrbridge_1_1_logger.html">Logger</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespacesteamvrbridge.html">steamvrbridge</a></li><li class="navelem"><a class="el" href="classsteamvrbridge_1_1_logger.html">Logger</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -101,16 +102,89 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>InitDriverLog<
 <tr class="memitem:a64d8f197a8e6cd54fcbe9f9b6dd0fd48"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a64d8f197a8e6cd54fcbe9f9b6dd0fd48"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>CleanupDriverLog</b> ()</td></tr>
 <tr class="separator:a64d8f197a8e6cd54fcbe9f9b6dd0fd48"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acf995f8e78229dc03fe41a6f3a1d50e1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acf995f8e78229dc03fe41a6f3a1d50e1"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>DriverLogVarArgs</b> (const char *pMsgFormat, va_list args)</td></tr>
-<tr class="separator:acf995f8e78229dc03fe41a6f3a1d50e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61d898083f53be8811dd9bc5b6e8930c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a61d898083f53be8811dd9bc5b6e8930c"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>DriverLogVarArgs</b> (const char *pMsgFormat, va_list args, std::string logLevel)</td></tr>
+<tr class="separator:a61d898083f53be8811dd9bc5b6e8930c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aac2bf150e852a99a38a0946a734184cc"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsteamvrbridge_1_1_logger.html#aac2bf150e852a99a38a0946a734184cc">Info</a> (const char *pchFormat,...)</td></tr>
 <tr class="separator:aac2bf150e852a99a38a0946a734184cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afc2cbc286ae323679720cfc3b2638900"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afc2cbc286ae323679720cfc3b2638900"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>Debug</b> (const char *pchFormat,...)</td></tr>
+<tr class="memitem:afc2cbc286ae323679720cfc3b2638900"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsteamvrbridge_1_1_logger.html#afc2cbc286ae323679720cfc3b2638900">Debug</a> (const char *pchFormat,...)</td></tr>
 <tr class="separator:afc2cbc286ae323679720cfc3b2638900"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c77662c2b85e1b7913d5a1234532ed3"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsteamvrbridge_1_1_logger.html#a5c77662c2b85e1b7913d5a1234532ed3">Warn</a> (const char *pchFormat,...)</td></tr>
+<tr class="separator:a5c77662c2b85e1b7913d5a1234532ed3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb93aa70f8900f65478a0d034a0bb249"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsteamvrbridge_1_1_logger.html#afb93aa70f8900f65478a0d034a0bb249">Error</a> (const char *pchFormat,...)</td></tr>
+<tr class="separator:afb93aa70f8900f65478a0d034a0bb249"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="afc2cbc286ae323679720cfc3b2638900"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void steamvrbridge::Logger::Debug </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pMsgFormat</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Logs a printf-style debug line logging. </p>
+
+</div>
+</div>
+<a class="anchor" id="afb93aa70f8900f65478a0d034a0bb249"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void steamvrbridge::Logger::Error </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pMsgFormat</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Logs a printf-style error line logging. </p>
+
+</div>
+</div>
 <a class="anchor" id="aac2bf150e852a99a38a0946a734184cc"></a>
 <div class="memitem">
 <div class="memproto">
@@ -142,7 +216,42 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>Debug</b> (con
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Provides printf-style debug logging via the vr::IVRDriverLog interface provided by SteamVR during initialization. Client logging ends up in vrclient_appname.txt and server logging ends up in vrserver.txt. </p>
+<p>Logs a printf-style info line logging. </p>
+
+</div>
+</div>
+<a class="anchor" id="a5c77662c2b85e1b7913d5a1234532ed3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void steamvrbridge::Logger::Warn </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pMsgFormat</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Logs a printf-style warn line logging. </p>
 
 </div>
 </div>

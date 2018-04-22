@@ -37,6 +37,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -70,7 +71,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -81,13 +82,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>steamvrbridge</b></li><li class="navelem"><a class="el" href="classsteamvrbridge_1_1_p_s_move_controller.html">PSMoveController</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespacesteamvrbridge.html">steamvrbridge</a></li><li class="navelem"><a class="el" href="classsteamvrbridge_1_1_p_s_move_controller.html">PSMoveController</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pri-types">Private Types</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-static-methods">Static Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
@@ -102,7 +102,8 @@ Inheritance diagram for steamvrbridge::PSMoveController:</div>
  <div class="center">
   <img src="classsteamvrbridge_1_1_p_s_move_controller.png" usemap="#steamvrbridge::PSMoveController_map" alt=""/>
   <map id="steamvrbridge::PSMoveController_map" name="steamvrbridge::PSMoveController_map">
-<area href="classsteamvrbridge_1_1_trackable_device.html" alt="steamvrbridge::TrackableDevice" shape="rect" coords="0,56,202,80"/>
+<area href="classsteamvrbridge_1_1_i_trackable_device.html" alt="steamvrbridge::ITrackableDevice" shape="rect" coords="0,56,202,80"/>
+<area href="classsteamvrbridge_1_1_i_controller.html" alt="steamvrbridge::IController" shape="rect" coords="212,56,414,80"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -112,169 +113,91 @@ Public Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><b>PSMoveController</b> (PSMControllerID psmControllerID, PSMControllerType psmControllerType, vr::ETrackedControllerRole trackedControllerRole, const char *psmSerialNo)</td></tr>
 <tr class="separator:a789b6d83403d0cc0aae8f6e89b065311"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad772764f8b2652d6760573c4c77a76e4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad772764f8b2652d6760573c4c77a76e4"></a>
-virtual vr::EVRInitError&#160;</td><td class="memItemRight" valign="bottom"><b>Activate</b> (vr::TrackedDeviceIndex_t unObjectId) override</td></tr>
+vr::EVRInitError&#160;</td><td class="memItemRight" valign="bottom"><b>Activate</b> (vr::TrackedDeviceIndex_t unObjectId) override</td></tr>
 <tr class="separator:ad772764f8b2652d6760573c4c77a76e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af01d5ded6981666c52c68622dafac6f1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af01d5ded6981666c52c68622dafac6f1"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>Deactivate</b> () override</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Deactivate</b> () override</td></tr>
 <tr class="separator:af01d5ded6981666c52c68622dafac6f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adfb7518a3a32831428fa474feab6422f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adfb7518a3a32831428fa474feab6422f"></a>
-virtual vr::ETrackedDeviceClass&#160;</td><td class="memItemRight" valign="bottom"><b>GetTrackedDeviceClass</b> () const override</td></tr>
-<tr class="separator:adfb7518a3a32831428fa474feab6422f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af59dc0679b86d85beb7ce00fe92b8e38"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af59dc0679b86d85beb7ce00fe92b8e38"></a>
+vr::ETrackedDeviceClass&#160;</td><td class="memItemRight" valign="bottom"><b>GetTrackedDeviceClass</b> () const override</td></tr>
+<tr class="separator:af59dc0679b86d85beb7ce00fe92b8e38"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7d101884299c29157d85ff1159957d4f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7d101884299c29157d85ff1159957d4f"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>Update</b> () override</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Update</b> () override</td></tr>
 <tr class="separator:a7d101884299c29157d85ff1159957d4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8b7dba4fc29ae790519f68d2a8571c47"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8b7dba4fc29ae790519f68d2a8571c47"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>RefreshWorldFromDriverPose</b> () override</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>RefreshWorldFromDriverPose</b> () override</td></tr>
 <tr class="separator:a8b7dba4fc29ae790519f68d2a8571c47"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0d1a8787d1732b6a35dc43e21c83d1f2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0d1a8787d1732b6a35dc43e21c83d1f2"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>HasPSMControllerId</b> (int ControllerID) const </td></tr>
-<tr class="separator:a0d1a8787d1732b6a35dc43e21c83d1f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3a5991a04cebb8a9a95a507ce1a529fe"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3a5991a04cebb8a9a95a507ce1a529fe"></a>
-const PSMController *&#160;</td><td class="memItemRight" valign="bottom"><b>getPSMControllerView</b> () const </td></tr>
-<tr class="separator:a3a5991a04cebb8a9a95a507ce1a529fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0afee3f2e1c6f1ae406d85b5c230d669"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0afee3f2e1c6f1ae406d85b5c230d669"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><b>getPSMControllerSerialNo</b> () const </td></tr>
-<tr class="separator:a0afee3f2e1c6f1ae406d85b5c230d669"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4df61f2053b2e962659ad50d9e1e89cf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4df61f2053b2e962659ad50d9e1e89cf"></a>
-PSMControllerType&#160;</td><td class="memItemRight" valign="bottom"><b>getPSMControllerType</b> () const </td></tr>
-<tr class="separator:a4df61f2053b2e962659ad50d9e1e89cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a86e83870364440fb730a332b7e28499e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a86e83870364440fb730a332b7e28499e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setPendingPulseDurationSecs</b> (float durationSecs)</td></tr>
-<tr class="separator:a86e83870364440fb730a332b7e28499e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad095925399a353331e7b0e4bf8f071b4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad095925399a353331e7b0e4bf8f071b4"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateRumbleState</b> ()</td></tr>
-<tr class="separator:ad095925399a353331e7b0e4bf8f071b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_classsteamvrbridge_1_1_trackable_device"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classsteamvrbridge_1_1_trackable_device')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classsteamvrbridge_1_1_trackable_device.html">steamvrbridge::TrackableDevice</a></td></tr>
-<tr class="memitem:aa8a28b0a8122d5cf850bc39461fd563c inherit pub_methods_classsteamvrbridge_1_1_trackable_device"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa8a28b0a8122d5cf850bc39461fd563c"></a>
+<tr class="memitem:aab1fcf306b74c26822e3134f1861d7a3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aab1fcf306b74c26822e3134f1861d7a3"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>HasPSMControllerId</b> (int ControllerID) const override</td></tr>
+<tr class="separator:aab1fcf306b74c26822e3134f1861d7a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad289851cbfcafb405168ba64cfdfb7c9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad289851cbfcafb405168ba64cfdfb7c9"></a>
+const PSMController *&#160;</td><td class="memItemRight" valign="bottom"><b>GetPSMControllerView</b> () const override</td></tr>
+<tr class="separator:ad289851cbfcafb405168ba64cfdfb7c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18854ae210b946034979baa0b0517d2f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a18854ae210b946034979baa0b0517d2f"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><b>GetPSMControllerSerialNo</b> () const override</td></tr>
+<tr class="separator:a18854ae210b946034979baa0b0517d2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a222b9bb205a66b98d376d788a66123e5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a222b9bb205a66b98d376d788a66123e5"></a>
+PSMControllerType&#160;</td><td class="memItemRight" valign="bottom"><b>GetPSMControllerType</b> () const override</td></tr>
+<tr class="separator:a222b9bb205a66b98d376d788a66123e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25a5c6bc5c73abf6755c1150d8a77dee"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a25a5c6bc5c73abf6755c1150d8a77dee"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetPendingHapticVibration</b> (vr::VREvent_HapticVibration_t hapticData) override</td></tr>
+<tr class="separator:a25a5c6bc5c73abf6755c1150d8a77dee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f2524d7a8f5b0695bc968dcb8b25278"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7f2524d7a8f5b0695bc968dcb8b25278"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateRumbleState</b> () override</td></tr>
+<tr class="separator:a7f2524d7a8f5b0695bc968dcb8b25278"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classsteamvrbridge_1_1_i_trackable_device"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classsteamvrbridge_1_1_i_trackable_device')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classsteamvrbridge_1_1_i_trackable_device.html">steamvrbridge::ITrackableDevice</a></td></tr>
+<tr class="memitem:a70c791c36a7998e8d4269b4cd6f316bb inherit pub_methods_classsteamvrbridge_1_1_i_trackable_device"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a70c791c36a7998e8d4269b4cd6f316bb"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>EnterStandby</b> () override</td></tr>
-<tr class="separator:aa8a28b0a8122d5cf850bc39461fd563c inherit pub_methods_classsteamvrbridge_1_1_trackable_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac924d789938bfa1e8304b78ef6986a32 inherit pub_methods_classsteamvrbridge_1_1_trackable_device"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac924d789938bfa1e8304b78ef6986a32"></a>
+<tr class="separator:a70c791c36a7998e8d4269b4cd6f316bb inherit pub_methods_classsteamvrbridge_1_1_i_trackable_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a436b733841eae7471c3844ab50e7067b inherit pub_methods_classsteamvrbridge_1_1_i_trackable_device"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a436b733841eae7471c3844ab50e7067b"></a>
 virtual void *&#160;</td><td class="memItemRight" valign="bottom"><b>GetComponent</b> (const char *pchComponentNameAndVersion) override</td></tr>
-<tr class="separator:ac924d789938bfa1e8304b78ef6986a32 inherit pub_methods_classsteamvrbridge_1_1_trackable_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7c470bf28117fa3c2f020073d28ddb53 inherit pub_methods_classsteamvrbridge_1_1_trackable_device"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7c470bf28117fa3c2f020073d28ddb53"></a>
+<tr class="separator:a436b733841eae7471c3844ab50e7067b inherit pub_methods_classsteamvrbridge_1_1_i_trackable_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8289d3d49c7fbcc9f94ff8b6de05b2bb inherit pub_methods_classsteamvrbridge_1_1_i_trackable_device"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8289d3d49c7fbcc9f94ff8b6de05b2bb"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>DebugRequest</b> (const char *pchRequest, char *pchResponseBuffer, uint32_t unResponseBufferSize) override</td></tr>
-<tr class="separator:a7c470bf28117fa3c2f020073d28ddb53 inherit pub_methods_classsteamvrbridge_1_1_trackable_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7579bea0120fe087ef43f3b671c38ad7 inherit pub_methods_classsteamvrbridge_1_1_trackable_device"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7579bea0120fe087ef43f3b671c38ad7"></a>
+<tr class="separator:a8289d3d49c7fbcc9f94ff8b6de05b2bb inherit pub_methods_classsteamvrbridge_1_1_i_trackable_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2d5bb953b14692b2e99d462d4a8b9b7 inherit pub_methods_classsteamvrbridge_1_1_i_trackable_device"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae2d5bb953b14692b2e99d462d4a8b9b7"></a>
 virtual vr::DriverPose_t&#160;</td><td class="memItemRight" valign="bottom"><b>GetPose</b> () override</td></tr>
-<tr class="separator:a7579bea0120fe087ef43f3b671c38ad7 inherit pub_methods_classsteamvrbridge_1_1_trackable_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae2258bbe2b7cc9a35a2aa14f0121d7b6 inherit pub_methods_classsteamvrbridge_1_1_trackable_device"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae2258bbe2b7cc9a35a2aa14f0121d7b6"></a>
+<tr class="separator:ae2d5bb953b14692b2e99d462d4a8b9b7 inherit pub_methods_classsteamvrbridge_1_1_i_trackable_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbf61212603a09bdb4f689b76b085a52 inherit pub_methods_classsteamvrbridge_1_1_i_trackable_device"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abbf61212603a09bdb4f689b76b085a52"></a>
 virtual vr::ETrackedControllerRole&#160;</td><td class="memItemRight" valign="bottom"><b>GetTrackedDeviceRole</b> () const </td></tr>
-<tr class="separator:ae2258bbe2b7cc9a35a2aa14f0121d7b6 inherit pub_methods_classsteamvrbridge_1_1_trackable_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a631749a7c18eeab00ac06f53073df7fd inherit pub_methods_classsteamvrbridge_1_1_trackable_device"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a631749a7c18eeab00ac06f53073df7fd"></a>
+<tr class="separator:abbf61212603a09bdb4f689b76b085a52 inherit pub_methods_classsteamvrbridge_1_1_i_trackable_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ff2d5c8b280dd2718ae13768e395460 inherit pub_methods_classsteamvrbridge_1_1_i_trackable_device"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6ff2d5c8b280dd2718ae13768e395460"></a>
 virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsActivated</b> () const </td></tr>
-<tr class="separator:a631749a7c18eeab00ac06f53073df7fd inherit pub_methods_classsteamvrbridge_1_1_trackable_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adf38b79a505778380fae6f964b190620 inherit pub_methods_classsteamvrbridge_1_1_trackable_device"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adf38b79a505778380fae6f964b190620"></a>
+<tr class="separator:a6ff2d5c8b280dd2718ae13768e395460 inherit pub_methods_classsteamvrbridge_1_1_i_trackable_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ebf019287a4a50fdc7e223b70d89d5f inherit pub_methods_classsteamvrbridge_1_1_i_trackable_device"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5ebf019287a4a50fdc7e223b70d89d5f"></a>
 PSMPosef&#160;</td><td class="memItemRight" valign="bottom"><b>GetWorldFromDriverPose</b> ()</td></tr>
-<tr class="separator:adf38b79a505778380fae6f964b190620 inherit pub_methods_classsteamvrbridge_1_1_trackable_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a33673986020048e249e0d1c999135db8 inherit pub_methods_classsteamvrbridge_1_1_trackable_device"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a33673986020048e249e0d1c999135db8"></a>
+<tr class="separator:a5ebf019287a4a50fdc7e223b70d89d5f inherit pub_methods_classsteamvrbridge_1_1_i_trackable_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad96829aedede9cd4d326c21f5a35583e inherit pub_methods_classsteamvrbridge_1_1_i_trackable_device"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad96829aedede9cd4d326c21f5a35583e"></a>
 virtual const char *&#160;</td><td class="memItemRight" valign="bottom"><b>GetSteamVRIdentifier</b> () const </td></tr>
-<tr class="separator:a33673986020048e249e0d1c999135db8 inherit pub_methods_classsteamvrbridge_1_1_trackable_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af285cc7c8be4434b41c86a754fbf456a inherit pub_methods_classsteamvrbridge_1_1_trackable_device"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af285cc7c8be4434b41c86a754fbf456a"></a>
+<tr class="separator:ad96829aedede9cd4d326c21f5a35583e inherit pub_methods_classsteamvrbridge_1_1_i_trackable_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70e7fb190bd0102d16cbf48554dfc8a2 inherit pub_methods_classsteamvrbridge_1_1_i_trackable_device"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a70e7fb190bd0102d16cbf48554dfc8a2"></a>
 virtual const <br class="typebreak"/>
 vr::TrackedDeviceIndex_t&#160;</td><td class="memItemRight" valign="bottom"><b>getTrackedDeviceIndex</b> ()</td></tr>
-<tr class="separator:af285cc7c8be4434b41c86a754fbf456a inherit pub_methods_classsteamvrbridge_1_1_trackable_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4f417f1bd1f01f737bef9b76f26cd9c5 inherit pub_methods_classsteamvrbridge_1_1_trackable_device"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4f417f1bd1f01f737bef9b76f26cd9c5"></a>
+<tr class="separator:a70e7fb190bd0102d16cbf48554dfc8a2 inherit pub_methods_classsteamvrbridge_1_1_i_trackable_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef8e6e7067d9f21417844a0779c8a145 inherit pub_methods_classsteamvrbridge_1_1_i_trackable_device"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aef8e6e7067d9f21417844a0779c8a145"></a>
 vr::PropertyContainerHandle_t&#160;</td><td class="memItemRight" valign="bottom"><b>getPropertyContainerHandle</b> () const </td></tr>
-<tr class="separator:a4f417f1bd1f01f737bef9b76f26cd9c5 inherit pub_methods_classsteamvrbridge_1_1_trackable_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
-Private Types</h2></td></tr>
-<tr class="memitem:aab9a37386c9f958fc60c4370572fa368"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><b>ePSButtonID</b> { <br/>
-&#160;&#160;<b>k_EPSButtonID_0</b>, 
-<b>k_EPSButtonID_1</b>, 
-<b>k_EPSButtonID_2</b>, 
-<b>k_EPSButtonID_3</b>, 
-<br/>
-&#160;&#160;<b>k_EPSButtonID_4</b>, 
-<b>k_EPSButtonID_5</b>, 
-<b>k_EPSButtonID_6</b>, 
-<b>k_EPSButtonID_7</b>, 
-<br/>
-&#160;&#160;<b>k_EPSButtonID_8</b>, 
-<b>k_EPSButtonID_9</b>, 
-<b>k_EPSButtonID_10</b>, 
-<b>k_EPSButtonID_11</b>, 
-<br/>
-&#160;&#160;<b>k_EPSButtonID_12</b>, 
-<b>k_EPSButtonID_13</b>, 
-<b>k_EPSButtonID_14</b>, 
-<b>k_EPSButtonID_15</b>, 
-<br/>
-&#160;&#160;<b>k_EPSButtonID_16</b>, 
-<b>k_EPSButtonID_17</b>, 
-<b>k_EPSButtonID_18</b>, 
-<b>k_EPSButtonID_19</b>, 
-<br/>
-&#160;&#160;<b>k_EPSButtonID_20</b>, 
-<b>k_EPSButtonID_21</b>, 
-<b>k_EPSButtonID_22</b>, 
-<b>k_EPSButtonID_23</b>, 
-<br/>
-&#160;&#160;<b>k_EPSButtonID_24</b>, 
-<b>k_EPSButtonID_25</b>, 
-<b>k_EPSButtonID_26</b>, 
-<b>k_EPSButtonID_27</b>, 
-<br/>
-&#160;&#160;<b>k_EPSButtonID_28</b>, 
-<b>k_EPSButtonID_29</b>, 
-<b>k_EPSButtonID_30</b>, 
-<b>k_EPSButtonID_31</b>, 
-<br/>
-&#160;&#160;<b>k_EPSButtonID_Count</b>, 
-<b>k_EPSButtonID_PS</b> = k_EPSButtonID_0, 
-<b>k_EPSButtonID_Left</b> = k_EPSButtonID_1, 
-<b>k_EPSButtonID_Up</b> = k_EPSButtonID_2, 
-<br/>
-&#160;&#160;<b>k_EPSButtonID_Right</b> = k_EPSButtonID_3, 
-<b>k_EPSButtonID_Down</b> = k_EPSButtonID_4, 
-<b>k_EPSButtonID_Move</b> = k_EPSButtonID_5, 
-<b>k_EPSButtonID_Trackpad</b> = k_EPSButtonID_6, 
-<br/>
-&#160;&#160;<b>k_EPSButtonID_Trigger</b> = k_EPSButtonID_7, 
-<b>k_EPSButtonID_Triangle</b> = k_EPSButtonID_8, 
-<b>k_EPSButtonID_Square</b> = k_EPSButtonID_9, 
-<b>k_EPSButtonID_Circle</b> = k_EPSButtonID_10, 
-<br/>
-&#160;&#160;<b>k_EPSButtonID_Cross</b> = k_EPSButtonID_11, 
-<b>k_EPSButtonID_Select</b> = k_EPSButtonID_12, 
-<b>k_EPSButtonID_Share</b> = k_EPSButtonID_13, 
-<b>k_EPSButtonID_Start</b> = k_EPSButtonID_14, 
-<br/>
-&#160;&#160;<b>k_EPSButtonID_Options</b> = k_EPSButtonID_15, 
-<b>k_EPSButtonID_L1</b> = k_EPSButtonID_16, 
-<b>k_EPSButtonID_L2</b> = k_EPSButtonID_17, 
-<b>k_EPSButtonID_L3</b> = k_EPSButtonID_18, 
-<br/>
-&#160;&#160;<b>k_EPSButtonID_R1</b> = k_EPSButtonID_19, 
-<b>k_EPSButtonID_R2</b> = k_EPSButtonID_20, 
-<b>k_EPSButtonID_R3</b> = k_EPSButtonID_21
-<br/>
- }</td></tr>
-<tr class="separator:aab9a37386c9f958fc60c4370572fa368"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:aef8e6e7067d9f21417844a0779c8a145 inherit pub_methods_classsteamvrbridge_1_1_i_trackable_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:a624cf07480ef0a927333999ea623251e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a624cf07480ef0a927333999ea623251e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>PSMoveController::UpdateButtonState</b> (ePSButtonID button, bool buttonState)</td></tr>
-<tr class="separator:a624cf07480ef0a927333999ea623251e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a46070ba4ad60138b765d582290a763f1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a46070ba4ad60138b765d582290a763f1"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>RealignHMDTrackingSpace</b> ()</td></tr>
-<tr class="separator:a46070ba4ad60138b765d582290a763f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a35cccf9a2560d80147d012bd956ecf4e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a35cccf9a2560d80147d012bd956ecf4e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>HandleTouchPadDirection</b> ()</td></tr>
-<tr class="separator:a35cccf9a2560d80147d012bd956ecf4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a43d6bd599ed9cd721c447ec72d94368c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a43d6bd599ed9cd721c447ec72d94368c"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateControllerState</b> ()</td></tr>
-<tr class="separator:a43d6bd599ed9cd721c447ec72d94368c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a894d83ec8f35d42fb2b13bea2b5b8708"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a894d83ec8f35d42fb2b13bea2b5b8708"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>HandleTrigger</b> (float latestTriggerValue)</td></tr>
-<tr class="separator:a894d83ec8f35d42fb2b13bea2b5b8708"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a08f592c62d97e77cd2a527b41ad2d5f2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a08f592c62d97e77cd2a527b41ad2d5f2"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateTrackingState</b> ()</td></tr>
-<tr class="separator:a08f592c62d97e77cd2a527b41ad2d5f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3856a82ea44a5ea3db1e159735ed18fd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3856a82ea44a5ea3db1e159735ed18fd"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateBatteryChargeState</b> (PSMBatteryState newBatteryEnum)</td></tr>
-<tr class="separator:a3856a82ea44a5ea3db1e159735ed18fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50aac2b0a75ddd88b5c93463de9f5175"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a50aac2b0a75ddd88b5c93463de9f5175"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateButtonState</b> (ePSButtonID button, bool buttonState) override</td></tr>
+<tr class="separator:a50aac2b0a75ddd88b5c93463de9f5175"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72a600d87ef4309843a5379d7dad154c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a72a600d87ef4309843a5379d7dad154c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateTouchPadDirection</b> () override</td></tr>
+<tr class="separator:a72a600d87ef4309843a5379d7dad154c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75aa8d0fe5932ee9c5ed703c56dc8c30"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a75aa8d0fe5932ee9c5ed703c56dc8c30"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateControllerState</b> () override</td></tr>
+<tr class="separator:a75aa8d0fe5932ee9c5ed703c56dc8c30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2690511ca8c16e4db8b4ae357df03718"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2690511ca8c16e4db8b4ae357df03718"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateBatteryChargeState</b> (PSMBatteryState newBatteryEnum) override</td></tr>
+<tr class="separator:a2690511ca8c16e4db8b4ae357df03718"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3c5538b994f797e1167bd487dc50cb0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad3c5538b994f797e1167bd487dc50cb0"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetTriggerValue</b> (float latestTriggerValue) override</td></tr>
+<tr class="separator:ad3c5538b994f797e1167bd487dc50cb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab384a1ec5bfb1b1c2f4ab4b4e0daa0f0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab384a1ec5bfb1b1c2f4ab4b4e0daa0f0"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateTrackingState</b> () override</td></tr>
+<tr class="separator:ab384a1ec5bfb1b1c2f4ab4b4e0daa0f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aca387af35d3c66fbee2436852574a4b0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aca387af35d3c66fbee2436852574a4b0"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>LoadButtonMapping</b> (vr::IVRSettings *pSettings, const ePSButtonID psButtonID, const vr::EVRButtonId defaultVRButtonID, const eVRTouchpadDirection defaultTouchpadDirection, int controllerId=-1)</td></tr>
 <tr class="separator:aca387af35d3c66fbee2436852574a4b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -314,9 +237,15 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>m_fBatteryChargeFrac
 <tr class="memitem:afc3c2a305173884bcfd45eac6d524cb1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afc3c2a305173884bcfd45eac6d524cb1"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bRumbleSuppressed</b></td></tr>
 <tr class="separator:afc3c2a305173884bcfd45eac6d524cb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a736a593ce0bd1e23bbc366c7bff24e2e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a736a593ce0bd1e23bbc366c7bff24e2e"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><b>m_pendingHapticPulseDurationSecs</b></td></tr>
-<tr class="separator:a736a593ce0bd1e23bbc366c7bff24e2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef07818150dc6f9b75b830eca2d70303"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aef07818150dc6f9b75b830eca2d70303"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>m_pendingHapticDurationSecs</b></td></tr>
+<tr class="separator:aef07818150dc6f9b75b830eca2d70303"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a9d5be812ff805bb661c509a2e822aa"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3a9d5be812ff805bb661c509a2e822aa"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>m_pendingHapticAmplitude</b></td></tr>
+<tr class="separator:a3a9d5be812ff805bb661c509a2e822aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1c031f09cdc01eec214797dc12bbdda"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae1c031f09cdc01eec214797dc12bbdda"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>m_pendingHapticFrequency</b></td></tr>
+<tr class="separator:ae1c031f09cdc01eec214797dc12bbdda"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2c1fec2b850815707d9a9529043f0fa5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2c1fec2b850815707d9a9529043f0fa5"></a>
 std::chrono::time_point<br class="typebreak"/>
 &lt; std::chrono::high_resolution_clock &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_lastTimeRumbleSent</b></td></tr>
@@ -414,121 +343,102 @@ class <a class="el" href="classsteamvrbridge_1_1_i_hand_orientation_solver.html"
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
-<tr class="inherit_header pub_types_classsteamvrbridge_1_1_trackable_device"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classsteamvrbridge_1_1_trackable_device')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classsteamvrbridge_1_1_trackable_device.html">steamvrbridge::TrackableDevice</a></td></tr>
-<tr class="memitem:a08ecfc488dc150b550a1f6c9cf4f38ff inherit pub_types_classsteamvrbridge_1_1_trackable_device"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br/>
-&#160;&#160;<b>k_eButton_Trackpad</b>, 
-<b>k_eButton_Trigger</b>, 
-<b>k_eButton_Grip</b>, 
+<tr class="inherit_header pub_types_classsteamvrbridge_1_1_i_trackable_device"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classsteamvrbridge_1_1_i_trackable_device')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classsteamvrbridge_1_1_i_trackable_device.html">steamvrbridge::ITrackableDevice</a></td></tr>
+<tr class="memitem:a065522dccef914af4547fb7468768e3a inherit pub_types_classsteamvrbridge_1_1_i_trackable_device"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br/>
+&#160;&#160;<b>k_eButton_Grip</b>, 
 <b>k_eButton_Application</b>, 
-<br/>
-&#160;&#160;<b>k_eButton_System</b>, 
+<b>k_eButton_System</b>, 
 <b>k_eButton_Guide</b>, 
-<b>k_eButton_Back</b>, 
-<b>k_eValue_Trigger</b>, 
 <br/>
-&#160;&#160;<b>k_eTrackpad_X</b>, 
-<b>k_eTrackpad_Y</b>, 
+&#160;&#160;<b>k_eButton_Back</b>, 
+<b>k_eButton_Trackpad</b>, 
 <b>k_eTouch_Trackpad</b>, 
-<b>k_eTouch_Trigger</b>
+<b>k_eTrackpad_X</b>, 
+<br/>
+&#160;&#160;<b>k_eTrackpad_Y</b>, 
+<b>k_eButton_Trigger</b>, 
+<b>k_eTouch_Trigger</b>, 
+<b>k_eValue_Trigger</b>
 <br/>
  }</td></tr>
-<tr class="separator:a08ecfc488dc150b550a1f6c9cf4f38ff inherit pub_types_classsteamvrbridge_1_1_trackable_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a68206a174de76c4ed6c981727475b8e3 inherit pub_types_classsteamvrbridge_1_1_trackable_device"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><b>eVRTouchpadDirection</b> { <br/>
-&#160;&#160;<b>k_EVRTouchpadDirection_None</b>, 
-<b>k_EVRTouchpadDirection_Left</b>, 
-<b>k_EVRTouchpadDirection_Up</b>, 
-<b>k_EVRTouchpadDirection_Right</b>, 
-<br/>
-&#160;&#160;<b>k_EVRTouchpadDirection_Down</b>, 
-<b>k_EVRTouchpadDirection_UpLeft</b>, 
-<b>k_EVRTouchpadDirection_UpRight</b>, 
-<b>k_EVRTouchpadDirection_DownLeft</b>, 
-<br/>
-&#160;&#160;<b>k_EVRTouchpadDirection_DownRight</b>, 
-<b>k_EVRTouchpadDirection_Count</b>
-<br/>
- }</td></tr>
-<tr class="separator:a68206a174de76c4ed6c981727475b8e3 inherit pub_types_classsteamvrbridge_1_1_trackable_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_attribs_classsteamvrbridge_1_1_trackable_device"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classsteamvrbridge_1_1_trackable_device')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="classsteamvrbridge_1_1_trackable_device.html">steamvrbridge::TrackableDevice</a></td></tr>
-<tr class="memitem:a462a1b08a0fb8bede41c18af5e9a53c7 inherit pub_attribs_classsteamvrbridge_1_1_trackable_device"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a462a1b08a0fb8bede41c18af5e9a53c7"></a>
+<tr class="separator:a065522dccef914af4547fb7468768e3a inherit pub_types_classsteamvrbridge_1_1_i_trackable_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_attribs_classsteamvrbridge_1_1_i_trackable_device"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classsteamvrbridge_1_1_i_trackable_device')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="classsteamvrbridge_1_1_i_trackable_device.html">steamvrbridge::ITrackableDevice</a></td></tr>
+<tr class="memitem:a2d22e24a325d832b9a1b7c0efa68279a inherit pub_attribs_classsteamvrbridge_1_1_i_trackable_device"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2d22e24a325d832b9a1b7c0efa68279a"></a>
 enum <br class="typebreak"/>
-steamvrbridge::TrackableDevice:: { ... } &#160;</td><td class="memItemRight" valign="bottom"><b>DeviceInput</b></td></tr>
-<tr class="separator:a462a1b08a0fb8bede41c18af5e9a53c7 inherit pub_attribs_classsteamvrbridge_1_1_trackable_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abd0518aff55587278513e9bfe3abed8e inherit pub_attribs_classsteamvrbridge_1_1_trackable_device"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abd0518aff55587278513e9bfe3abed8e"></a>
+steamvrbridge::ITrackableDevice:: { ... } &#160;</td><td class="memItemRight" valign="bottom"><b>DeviceInput</b></td></tr>
+<tr class="separator:a2d22e24a325d832b9a1b7c0efa68279a inherit pub_attribs_classsteamvrbridge_1_1_i_trackable_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4910c09ffe5b1572aad1d94d5d092671 inherit pub_attribs_classsteamvrbridge_1_1_i_trackable_device"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4910c09ffe5b1572aad1d94d5d092671"></a>
 const char *&#160;</td><td class="memItemRight" valign="bottom"><b>k_pch_Trackpad</b> = &quot;/input/trackpad/click&quot;</td></tr>
-<tr class="separator:abd0518aff55587278513e9bfe3abed8e inherit pub_attribs_classsteamvrbridge_1_1_trackable_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aedfa697b77d8762cddbce73690be69ef inherit pub_attribs_classsteamvrbridge_1_1_trackable_device"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aedfa697b77d8762cddbce73690be69ef"></a>
+<tr class="separator:a4910c09ffe5b1572aad1d94d5d092671 inherit pub_attribs_classsteamvrbridge_1_1_i_trackable_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a738316c4f9d656df1c83402b2d3f5631 inherit pub_attribs_classsteamvrbridge_1_1_i_trackable_device"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a738316c4f9d656df1c83402b2d3f5631"></a>
 const char *&#160;</td><td class="memItemRight" valign="bottom"><b>k_pch_Trackpad_Touch</b> = &quot;/input/trackpad/touch&quot;</td></tr>
-<tr class="separator:aedfa697b77d8762cddbce73690be69ef inherit pub_attribs_classsteamvrbridge_1_1_trackable_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac448427ca45e2faa57220e0639967db1 inherit pub_attribs_classsteamvrbridge_1_1_trackable_device"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac448427ca45e2faa57220e0639967db1"></a>
+<tr class="separator:a738316c4f9d656df1c83402b2d3f5631 inherit pub_attribs_classsteamvrbridge_1_1_i_trackable_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80ac9cab3299fd5379a106e39a1ae6ff inherit pub_attribs_classsteamvrbridge_1_1_i_trackable_device"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a80ac9cab3299fd5379a106e39a1ae6ff"></a>
 const char *&#160;</td><td class="memItemRight" valign="bottom"><b>k_pch_Trackpad_X</b> = &quot;/input/trackpad/x&quot;</td></tr>
-<tr class="separator:ac448427ca45e2faa57220e0639967db1 inherit pub_attribs_classsteamvrbridge_1_1_trackable_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a94b91ad0613ec1c6dd51179ab786f1be inherit pub_attribs_classsteamvrbridge_1_1_trackable_device"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a94b91ad0613ec1c6dd51179ab786f1be"></a>
+<tr class="separator:a80ac9cab3299fd5379a106e39a1ae6ff inherit pub_attribs_classsteamvrbridge_1_1_i_trackable_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b9de4e238dc85844c1fa6d958c0b61e inherit pub_attribs_classsteamvrbridge_1_1_i_trackable_device"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9b9de4e238dc85844c1fa6d958c0b61e"></a>
 const char *&#160;</td><td class="memItemRight" valign="bottom"><b>k_pch_Trackpad_Y</b> = &quot;/input/trackpad/y&quot;</td></tr>
-<tr class="separator:a94b91ad0613ec1c6dd51179ab786f1be inherit pub_attribs_classsteamvrbridge_1_1_trackable_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9cc2f29d12d35413f439dc84459bf1b8 inherit pub_attribs_classsteamvrbridge_1_1_trackable_device"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9cc2f29d12d35413f439dc84459bf1b8"></a>
+<tr class="separator:a9b9de4e238dc85844c1fa6d958c0b61e inherit pub_attribs_classsteamvrbridge_1_1_i_trackable_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5549d8e6f62e8662ca6b6fed5dff677b inherit pub_attribs_classsteamvrbridge_1_1_i_trackable_device"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5549d8e6f62e8662ca6b6fed5dff677b"></a>
 const char *&#160;</td><td class="memItemRight" valign="bottom"><b>k_pch_Trackpad_Value</b> = &quot;/input/trigger/value&quot;</td></tr>
-<tr class="separator:a9cc2f29d12d35413f439dc84459bf1b8 inherit pub_attribs_classsteamvrbridge_1_1_trackable_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a64b05a66dcbc73a62e78b54f7d0d0024 inherit pub_attribs_classsteamvrbridge_1_1_trackable_device"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a64b05a66dcbc73a62e78b54f7d0d0024"></a>
+<tr class="separator:a5549d8e6f62e8662ca6b6fed5dff677b inherit pub_attribs_classsteamvrbridge_1_1_i_trackable_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35c5bb49a6cdf438ea7322456fc60e00 inherit pub_attribs_classsteamvrbridge_1_1_i_trackable_device"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a35c5bb49a6cdf438ea7322456fc60e00"></a>
 const char *&#160;</td><td class="memItemRight" valign="bottom"><b>k_pch_Haptic</b> = &quot;/output/haptic&quot;</td></tr>
-<tr class="separator:a64b05a66dcbc73a62e78b54f7d0d0024 inherit pub_attribs_classsteamvrbridge_1_1_trackable_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3c3122911b3bd57f5e9288cae3d58e82 inherit pub_attribs_classsteamvrbridge_1_1_trackable_device"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3c3122911b3bd57f5e9288cae3d58e82"></a>
+<tr class="separator:a35c5bb49a6cdf438ea7322456fc60e00 inherit pub_attribs_classsteamvrbridge_1_1_i_trackable_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3c3d141b84ef512f3a1e85b9e7e0601 inherit pub_attribs_classsteamvrbridge_1_1_i_trackable_device"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af3c3d141b84ef512f3a1e85b9e7e0601"></a>
 const char *&#160;</td><td class="memItemRight" valign="bottom"><b>k_pch_Trigger</b> = &quot;/input/trigger/click&quot;</td></tr>
-<tr class="separator:a3c3122911b3bd57f5e9288cae3d58e82 inherit pub_attribs_classsteamvrbridge_1_1_trackable_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac6eb30b6b4c01ed2715cec633d8b9e5f inherit pub_attribs_classsteamvrbridge_1_1_trackable_device"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac6eb30b6b4c01ed2715cec633d8b9e5f"></a>
+<tr class="separator:af3c3d141b84ef512f3a1e85b9e7e0601 inherit pub_attribs_classsteamvrbridge_1_1_i_trackable_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12dd58e695587300cd5023c856c140d0 inherit pub_attribs_classsteamvrbridge_1_1_i_trackable_device"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a12dd58e695587300cd5023c856c140d0"></a>
 const char *&#160;</td><td class="memItemRight" valign="bottom"><b>k_pch_Trigger_Touch</b> = &quot;/input/trigger/touch&quot;</td></tr>
-<tr class="separator:ac6eb30b6b4c01ed2715cec633d8b9e5f inherit pub_attribs_classsteamvrbridge_1_1_trackable_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aedebab4374d944d43048967250921919 inherit pub_attribs_classsteamvrbridge_1_1_trackable_device"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aedebab4374d944d43048967250921919"></a>
+<tr class="separator:a12dd58e695587300cd5023c856c140d0 inherit pub_attribs_classsteamvrbridge_1_1_i_trackable_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ae8f4c358c5cb480996506eeda4d282 inherit pub_attribs_classsteamvrbridge_1_1_i_trackable_device"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7ae8f4c358c5cb480996506eeda4d282"></a>
 const char *&#160;</td><td class="memItemRight" valign="bottom"><b>k_pch_Application</b> = &quot;/input/application_menu/click&quot;</td></tr>
-<tr class="separator:aedebab4374d944d43048967250921919 inherit pub_attribs_classsteamvrbridge_1_1_trackable_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a97ddcf62b5810ada95cc01dde32c4400 inherit pub_attribs_classsteamvrbridge_1_1_trackable_device"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a97ddcf62b5810ada95cc01dde32c4400"></a>
+<tr class="separator:a7ae8f4c358c5cb480996506eeda4d282 inherit pub_attribs_classsteamvrbridge_1_1_i_trackable_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a395687221afa58428450349d0aa9cc41 inherit pub_attribs_classsteamvrbridge_1_1_i_trackable_device"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a395687221afa58428450349d0aa9cc41"></a>
 const char *&#160;</td><td class="memItemRight" valign="bottom"><b>k_pch_Back</b> = &quot;/input/back/click&quot;</td></tr>
-<tr class="separator:a97ddcf62b5810ada95cc01dde32c4400 inherit pub_attribs_classsteamvrbridge_1_1_trackable_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7569ba2b779b00761f78df0a76ce49f6 inherit pub_attribs_classsteamvrbridge_1_1_trackable_device"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7569ba2b779b00761f78df0a76ce49f6"></a>
-const char *&#160;</td><td class="memItemRight" valign="bottom"><b>k_pch_Guide</b> = &quot;/input/guide/click&quot;</td></tr>
-<tr class="separator:a7569ba2b779b00761f78df0a76ce49f6 inherit pub_attribs_classsteamvrbridge_1_1_trackable_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa65eeb2b8bb3c9fea4bdcbbb0d7f7ec3 inherit pub_attribs_classsteamvrbridge_1_1_trackable_device"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa65eeb2b8bb3c9fea4bdcbbb0d7f7ec3"></a>
+<tr class="separator:a395687221afa58428450349d0aa9cc41 inherit pub_attribs_classsteamvrbridge_1_1_i_trackable_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ea57ea63f249b225cbbe8b8eb99aadd inherit pub_attribs_classsteamvrbridge_1_1_i_trackable_device"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8ea57ea63f249b225cbbe8b8eb99aadd"></a>
 const char *&#160;</td><td class="memItemRight" valign="bottom"><b>k_pch_Grip</b> = &quot;/input/grip/click&quot;</td></tr>
-<tr class="separator:aa65eeb2b8bb3c9fea4bdcbbb0d7f7ec3 inherit pub_attribs_classsteamvrbridge_1_1_trackable_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae671c7d383652b28d90c232a6cad017d inherit pub_attribs_classsteamvrbridge_1_1_trackable_device"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae671c7d383652b28d90c232a6cad017d"></a>
+<tr class="separator:a8ea57ea63f249b225cbbe8b8eb99aadd inherit pub_attribs_classsteamvrbridge_1_1_i_trackable_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a649c5b6a14295fbde5ee4dab1490f921 inherit pub_attribs_classsteamvrbridge_1_1_i_trackable_device"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a649c5b6a14295fbde5ee4dab1490f921"></a>
 const char *&#160;</td><td class="memItemRight" valign="bottom"><b>k_pch_System</b> = &quot;/input/system/click&quot;</td></tr>
-<tr class="separator:ae671c7d383652b28d90c232a6cad017d inherit pub_attribs_classsteamvrbridge_1_1_trackable_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_attribs_classsteamvrbridge_1_1_trackable_device"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classsteamvrbridge_1_1_trackable_device')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classsteamvrbridge_1_1_trackable_device.html">steamvrbridge::TrackableDevice</a></td></tr>
-<tr class="memitem:a81f414f28d7a62615ff4a692ce8a8823 inherit pro_attribs_classsteamvrbridge_1_1_trackable_device"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a81f414f28d7a62615ff4a692ce8a8823"></a>
+<tr class="separator:a649c5b6a14295fbde5ee4dab1490f921 inherit pub_attribs_classsteamvrbridge_1_1_i_trackable_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_classsteamvrbridge_1_1_i_trackable_device"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classsteamvrbridge_1_1_i_trackable_device')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classsteamvrbridge_1_1_i_trackable_device.html">steamvrbridge::ITrackableDevice</a></td></tr>
+<tr class="memitem:a7eae51d48c3166399572d074e8faa70b inherit pro_attribs_classsteamvrbridge_1_1_i_trackable_device"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7eae51d48c3166399572d074e8faa70b"></a>
 vr::PropertyContainerHandle_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_ulPropertyContainer</b></td></tr>
-<tr class="separator:a81f414f28d7a62615ff4a692ce8a8823 inherit pro_attribs_classsteamvrbridge_1_1_trackable_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae8c8afda20eebabcce3118940b74065e inherit pro_attribs_classsteamvrbridge_1_1_trackable_device"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae8c8afda20eebabcce3118940b74065e"></a>
-<a class="el" href="structsteamvrbridge_1_1_trackable_device_1_1_state.html">State</a>&#160;</td><td class="memItemRight" valign="bottom"><b>state</b></td></tr>
-<tr class="separator:ae8c8afda20eebabcce3118940b74065e inherit pro_attribs_classsteamvrbridge_1_1_trackable_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa9fbc1ece5ddb26deb5df912c309f009 inherit pro_attribs_classsteamvrbridge_1_1_trackable_device"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa9fbc1ece5ddb26deb5df912c309f009"></a>
+<tr class="separator:a7eae51d48c3166399572d074e8faa70b inherit pro_attribs_classsteamvrbridge_1_1_i_trackable_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac67d6e4965bc46d8f2e8225be6897c37 inherit pro_attribs_classsteamvrbridge_1_1_i_trackable_device"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac67d6e4965bc46d8f2e8225be6897c37"></a>
+<a class="el" href="structsteamvrbridge_1_1_i_trackable_device_1_1_state.html">State</a>&#160;</td><td class="memItemRight" valign="bottom"><b>state</b></td></tr>
+<tr class="separator:ac67d6e4965bc46d8f2e8225be6897c37 inherit pro_attribs_classsteamvrbridge_1_1_i_trackable_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeacacd7c264235be196bc5bdd4d685df inherit pro_attribs_classsteamvrbridge_1_1_i_trackable_device"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aeacacd7c264235be196bc5bdd4d685df"></a>
 std::string&#160;</td><td class="memItemRight" valign="bottom"><b>m_strSteamVRSerialNo</b></td></tr>
-<tr class="separator:aa9fbc1ece5ddb26deb5df912c309f009 inherit pro_attribs_classsteamvrbridge_1_1_trackable_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a668b0cf603595edb9943562db101d7c1 inherit pro_attribs_classsteamvrbridge_1_1_trackable_device"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a668b0cf603595edb9943562db101d7c1"></a>
+<tr class="separator:aeacacd7c264235be196bc5bdd4d685df inherit pro_attribs_classsteamvrbridge_1_1_i_trackable_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0e0901c25a41585306751b383f1790f inherit pro_attribs_classsteamvrbridge_1_1_i_trackable_device"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad0e0901c25a41585306751b383f1790f"></a>
 vr::ETrackedControllerRole&#160;</td><td class="memItemRight" valign="bottom"><b>m_TrackedControllerRole</b></td></tr>
-<tr class="separator:a668b0cf603595edb9943562db101d7c1 inherit pro_attribs_classsteamvrbridge_1_1_trackable_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a64be2bceb318d354ec92bfdc6f05b337 inherit pro_attribs_classsteamvrbridge_1_1_trackable_device"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a64be2bceb318d354ec92bfdc6f05b337"></a>
+<tr class="separator:ad0e0901c25a41585306751b383f1790f inherit pro_attribs_classsteamvrbridge_1_1_i_trackable_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e3438be4e9af832a250ba6e30591f27 inherit pro_attribs_classsteamvrbridge_1_1_i_trackable_device"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0e3438be4e9af832a250ba6e30591f27"></a>
 vr::TrackedDeviceIndex_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_unSteamVRTrackedDeviceId</b></td></tr>
-<tr class="separator:a64be2bceb318d354ec92bfdc6f05b337 inherit pro_attribs_classsteamvrbridge_1_1_trackable_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6c747ab889cb89592d60369bbf181e3e inherit pro_attribs_classsteamvrbridge_1_1_trackable_device"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6c747ab889cb89592d60369bbf181e3e"></a>
+<tr class="separator:a0e3438be4e9af832a250ba6e30591f27 inherit pro_attribs_classsteamvrbridge_1_1_i_trackable_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28888e7f7af0853077aff1ee3ade1e0d inherit pro_attribs_classsteamvrbridge_1_1_i_trackable_device"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a28888e7f7af0853077aff1ee3ade1e0d"></a>
 vr::DriverPose_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_Pose</b></td></tr>
-<tr class="separator:a6c747ab889cb89592d60369bbf181e3e inherit pro_attribs_classsteamvrbridge_1_1_trackable_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a33678df00c17ef999c95de46a7cc21bd inherit pro_attribs_classsteamvrbridge_1_1_trackable_device"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a33678df00c17ef999c95de46a7cc21bd"></a>
+<tr class="separator:a28888e7f7af0853077aff1ee3ade1e0d inherit pro_attribs_classsteamvrbridge_1_1_i_trackable_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0436b5798d1e152f8236d37ab6393516 inherit pro_attribs_classsteamvrbridge_1_1_i_trackable_device"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0436b5798d1e152f8236d37ab6393516"></a>
 unsigned short&#160;</td><td class="memItemRight" valign="bottom"><b>m_firmware_revision</b></td></tr>
-<tr class="separator:a33678df00c17ef999c95de46a7cc21bd inherit pro_attribs_classsteamvrbridge_1_1_trackable_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a55a97470eae82a5e946bb9a341a220a7 inherit pro_attribs_classsteamvrbridge_1_1_trackable_device"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a55a97470eae82a5e946bb9a341a220a7"></a>
+<tr class="separator:a0436b5798d1e152f8236d37ab6393516 inherit pro_attribs_classsteamvrbridge_1_1_i_trackable_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e49de9ee1a5adf62d5e6ee9042e54b0 inherit pro_attribs_classsteamvrbridge_1_1_i_trackable_device"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2e49de9ee1a5adf62d5e6ee9042e54b0"></a>
 unsigned short&#160;</td><td class="memItemRight" valign="bottom"><b>m_hardware_revision</b></td></tr>
-<tr class="separator:a55a97470eae82a5e946bb9a341a220a7 inherit pro_attribs_classsteamvrbridge_1_1_trackable_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae3718e2cbd9541dcb8218f2a5ed8ac28 inherit pro_attribs_classsteamvrbridge_1_1_trackable_device"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae3718e2cbd9541dcb8218f2a5ed8ac28"></a>
+<tr class="separator:a2e49de9ee1a5adf62d5e6ee9042e54b0 inherit pro_attribs_classsteamvrbridge_1_1_i_trackable_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8fe37740b9c4203deadf22b40c262ac inherit pro_attribs_classsteamvrbridge_1_1_i_trackable_device"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae8fe37740b9c4203deadf22b40c262ac"></a>
 std::map&lt; int, <br class="typebreak"/>
 vr::VRInputComponentHandle_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_hButtons</b></td></tr>
-<tr class="separator:ae3718e2cbd9541dcb8218f2a5ed8ac28 inherit pro_attribs_classsteamvrbridge_1_1_trackable_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a27312f2ff3c1a8493660f6e0419dd9d4 inherit pro_attribs_classsteamvrbridge_1_1_trackable_device"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a27312f2ff3c1a8493660f6e0419dd9d4"></a>
+<tr class="separator:ae8fe37740b9c4203deadf22b40c262ac inherit pro_attribs_classsteamvrbridge_1_1_i_trackable_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb8739b5cbbbbab5dad463f9057e732e inherit pro_attribs_classsteamvrbridge_1_1_i_trackable_device"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abb8739b5cbbbbab5dad463f9057e732e"></a>
 std::map&lt; int, <br class="typebreak"/>
 vr::VRInputComponentHandle_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_hAxes</b></td></tr>
-<tr class="separator:a27312f2ff3c1a8493660f6e0419dd9d4 inherit pro_attribs_classsteamvrbridge_1_1_trackable_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a24edd9c6f6b1181818b2697580affeea inherit pro_attribs_classsteamvrbridge_1_1_trackable_device"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a24edd9c6f6b1181818b2697580affeea"></a>
+<tr class="separator:abb8739b5cbbbbab5dad463f9057e732e inherit pro_attribs_classsteamvrbridge_1_1_i_trackable_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5da43f3c6c38f85f5ca4a747ef61cc4 inherit pro_attribs_classsteamvrbridge_1_1_i_trackable_device"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af5da43f3c6c38f85f5ca4a747ef61cc4"></a>
 vr::VRInputComponentHandle_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_ulHapticComponent</b></td></tr>
-<tr class="separator:a24edd9c6f6b1181818b2697580affeea inherit pro_attribs_classsteamvrbridge_1_1_trackable_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:af5da43f3c6c38f85f5ca4a747ef61cc4 inherit pro_attribs_classsteamvrbridge_1_1_i_trackable_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>src/main/cpp/driver/<a class="el" href="ps__move__controller_8h_source.html">ps_move_controller.h</a></li>

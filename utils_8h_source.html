@@ -37,6 +37,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -67,7 +68,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -112,19 +113,31 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <span class="keyword">static</span> PSMQuatf ExtractPSMoveYawQuaternion(<span class="keyword">const</span> PSMQuatf &amp; q);</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <span class="comment">// Takes a given controller position vector, applies a given quartenian rotation and sets the result to a given output position vector.</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">void</span> GetMetersPosInRotSpace(<span class="keyword">const</span> PSMQuatf * rotation, PSMVector3f * out_position, <span class="keyword">const</span> PSMPSMove &amp; view);</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <span class="keyword">static</span> PSMQuatf openvrMatrixExtractPSMQuatf(<span class="keyword">const</span> vr::HmdMatrix34_t &amp;openVRTransform);</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <span class="keyword">static</span> PSMQuatf psmMatrix3fToPSMQuatf(<span class="keyword">const</span> PSMMatrix3f &amp;psmMat);</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">float</span> psmVector3fDistance(<span class="keyword">const</span> PSMVector3f &amp;a, <span class="keyword">const</span> PSMVector3f &amp;b);</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <span class="keyword">static</span> PSMVector3f psmVector3fLerp(<span class="keyword">const</span> PSMVector3f &amp;a, <span class="keyword">const</span> PSMVector3f &amp;b, <span class="keywordtype">float</span> u);</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <span class="keyword">static</span> PSMVector3f openvrMatrixExtractPSMVector3f(<span class="keyword">const</span> vr::HmdMatrix34_t &amp;openVRTransform);</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <span class="keyword">static</span> PSMPosef openvrMatrixExtractPSMPosef(<span class="keyword">const</span> vr::HmdMatrix34_t &amp;openVRTransform);</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <span class="keyword">static</span> std::string PSMVector3fToString(<span class="keyword">const</span> PSMVector3f&amp; position);</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <span class="keyword">static</span> std::string PSMQuatfToString(<span class="keyword">const</span> PSMQuatf&amp; rotation);</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <span class="keyword">static</span> std::string PSMPosefToString(<span class="keyword">const</span> PSMPosef&amp; pose);</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">void</span> GenerateTrackerSerialNumber(<span class="keywordtype">char</span> *p, <span class="keywordtype">int</span> psize, <span class="keywordtype">int</span> tracker);</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">void</span> GenerateControllerSteamVRIdentifier(<span class="keywordtype">char</span> *p, <span class="keywordtype">int</span> psize, <span class="keywordtype">int</span> controller);</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    };</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;}</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <span class="comment">// Returns the HMD pose in meters.</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <span class="comment">// Throws a std::exception when HMD index or HMD pose can&#39;t be obtained.</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <span class="keyword">static</span> PSMPosef Utils::GetHMDPoseInMeters();</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <span class="comment">// Returns a PSM pose of the controller aligned to the HMD tracking space. Returns NULL pointer when</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <span class="comment">// HMD index or pose can&#39;t be obtained.</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <span class="keyword">static</span> PSMPosef Utils::RealignHMDTrackingSpace(PSMQuatf controllerOrientationInHmdSpaceQuat,</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                                                       PSMVector3f controllerLocalOffsetFromHmdPosition,</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                                                       PSMControllerID controllerId,</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                                                       PSMPosef hmd_pose_meters,</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;                                                       <span class="keywordtype">bool</span> useControllerOrientation);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <span class="keyword">static</span> PSMQuatf openvrMatrixExtractPSMQuatf(<span class="keyword">const</span> vr::HmdMatrix34_t &amp;openVRTransform);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <span class="keyword">static</span> PSMQuatf psmMatrix3fToPSMQuatf(<span class="keyword">const</span> PSMMatrix3f &amp;psmMat);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">float</span> psmVector3fDistance(<span class="keyword">const</span> PSMVector3f &amp;a, <span class="keyword">const</span> PSMVector3f &amp;b);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="keyword">static</span> PSMVector3f psmVector3fLerp(<span class="keyword">const</span> PSMVector3f &amp;a, <span class="keyword">const</span> PSMVector3f &amp;b, <span class="keywordtype">float</span> u);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="keyword">static</span> PSMVector3f openvrMatrixExtractPSMVector3f(<span class="keyword">const</span> vr::HmdMatrix34_t &amp;openVRTransform);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <span class="keyword">static</span> PSMPosef openvrMatrixExtractPSMPosef(<span class="keyword">const</span> vr::HmdMatrix34_t &amp;openVRTransform);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="keyword">static</span> std::string PSMVector3fToString(<span class="keyword">const</span> PSMVector3f&amp; position);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="keyword">static</span> std::string PSMQuatfToString(<span class="keyword">const</span> PSMQuatf&amp; rotation);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <span class="keyword">static</span> std::string PSMPosefToString(<span class="keyword">const</span> PSMPosef&amp; pose);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">void</span> GenerateTrackerSerialNumber(<span class="keywordtype">char</span> *p, <span class="keywordtype">int</span> psize, <span class="keywordtype">int</span> tracker);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">void</span> GenerateControllerSteamVRIdentifier(<span class="keywordtype">char</span> *p, <span class="keywordtype">int</span> psize, <span class="keywordtype">int</span> controller);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    };</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;}</div>
 <div class="ttc" id="classsteamvrbridge_1_1_utils_html"><div class="ttname"><a href="classsteamvrbridge_1_1_utils.html">steamvrbridge::Utils</a></div><div class="ttdef"><b>Definition:</b> utils.h:16</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->

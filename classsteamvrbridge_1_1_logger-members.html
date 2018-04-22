@@ -37,6 +37,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -70,7 +71,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -81,7 +82,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>steamvrbridge</b></li><li class="navelem"><a class="el" href="classsteamvrbridge_1_1_logger.html">Logger</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespacesteamvrbridge.html">steamvrbridge</a></li><li class="navelem"><a class="el" href="classsteamvrbridge_1_1_logger.html">Logger</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -93,10 +94,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <p>This is the complete list of members for <a class="el" href="classsteamvrbridge_1_1_logger.html">steamvrbridge::Logger</a>, including all inherited members.</p>
 <table class="directory">
   <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>CleanupDriverLog</b>() (defined in <a class="el" href="classsteamvrbridge_1_1_logger.html">steamvrbridge::Logger</a>)</td><td class="entry"><a class="el" href="classsteamvrbridge_1_1_logger.html">steamvrbridge::Logger</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>Debug</b>(const char *pchFormat,...) (defined in <a class="el" href="classsteamvrbridge_1_1_logger.html">steamvrbridge::Logger</a>)</td><td class="entry"><a class="el" href="classsteamvrbridge_1_1_logger.html">steamvrbridge::Logger</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>DriverLogVarArgs</b>(const char *pMsgFormat, va_list args) (defined in <a class="el" href="classsteamvrbridge_1_1_logger.html">steamvrbridge::Logger</a>)</td><td class="entry"><a class="el" href="classsteamvrbridge_1_1_logger.html">steamvrbridge::Logger</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classsteamvrbridge_1_1_logger.html#aac2bf150e852a99a38a0946a734184cc">Info</a>(const char *pchFormat,...)</td><td class="entry"><a class="el" href="classsteamvrbridge_1_1_logger.html">steamvrbridge::Logger</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>InitDriverLog</b>(vr::IVRDriverLog *pDriverLog) (defined in <a class="el" href="classsteamvrbridge_1_1_logger.html">steamvrbridge::Logger</a>)</td><td class="entry"><a class="el" href="classsteamvrbridge_1_1_logger.html">steamvrbridge::Logger</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classsteamvrbridge_1_1_logger.html#afc2cbc286ae323679720cfc3b2638900">Debug</a>(const char *pchFormat,...)</td><td class="entry"><a class="el" href="classsteamvrbridge_1_1_logger.html">steamvrbridge::Logger</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>DriverLogVarArgs</b>(const char *pMsgFormat, va_list args, std::string logLevel) (defined in <a class="el" href="classsteamvrbridge_1_1_logger.html">steamvrbridge::Logger</a>)</td><td class="entry"><a class="el" href="classsteamvrbridge_1_1_logger.html">steamvrbridge::Logger</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classsteamvrbridge_1_1_logger.html#afb93aa70f8900f65478a0d034a0bb249">Error</a>(const char *pchFormat,...)</td><td class="entry"><a class="el" href="classsteamvrbridge_1_1_logger.html">steamvrbridge::Logger</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classsteamvrbridge_1_1_logger.html#aac2bf150e852a99a38a0946a734184cc">Info</a>(const char *pchFormat,...)</td><td class="entry"><a class="el" href="classsteamvrbridge_1_1_logger.html">steamvrbridge::Logger</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>InitDriverLog</b>(vr::IVRDriverLog *pDriverLog) (defined in <a class="el" href="classsteamvrbridge_1_1_logger.html">steamvrbridge::Logger</a>)</td><td class="entry"><a class="el" href="classsteamvrbridge_1_1_logger.html">steamvrbridge::Logger</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classsteamvrbridge_1_1_logger.html#a5c77662c2b85e1b7913d5a1234532ed3">Warn</a>(const char *pchFormat,...)</td><td class="entry"><a class="el" href="classsteamvrbridge_1_1_logger.html">steamvrbridge::Logger</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

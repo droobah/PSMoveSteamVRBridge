@@ -37,6 +37,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -67,7 +68,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -92,21 +93,24 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;openvr_driver.h&gt;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">//use a namesless namespace when sharing extern member functions</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">namespace </span>steamvrbridge</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;{</div>
-<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="classsteamvrbridge_1_1_logger.html">   11</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classsteamvrbridge_1_1_logger.html">Logger</a> {</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">bool</span> InitDriverLog(vr::IVRDriverLog *pDriverLog);</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">void</span> CleanupDriverLog();</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">void</span> DriverLogVarArgs(<span class="keyword">const</span> <span class="keywordtype">char</span> *pMsgFormat, va_list args);</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="classsteamvrbridge_1_1_logger.html#aac2bf150e852a99a38a0946a734184cc">Info</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *pchFormat, ...);</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">void</span> Debug(<span class="keyword">const</span> <span class="keywordtype">char</span> *pchFormat, ...);</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">namespace </span>steamvrbridge</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="classsteamvrbridge_1_1_logger.html">    9</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classsteamvrbridge_1_1_logger.html">Logger</a> {</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">bool</span> InitDriverLog(vr::IVRDriverLog *pDriverLog);</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">void</span> CleanupDriverLog();</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">void</span> DriverLogVarArgs(<span class="keyword">const</span> <span class="keywordtype">char</span> *pMsgFormat, va_list args, std::string logLevel);</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="classsteamvrbridge_1_1_logger.html#aac2bf150e852a99a38a0946a734184cc">Info</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *pchFormat, ...);</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="classsteamvrbridge_1_1_logger.html#afc2cbc286ae323679720cfc3b2638900">Debug</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *pchFormat, ...);</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="classsteamvrbridge_1_1_logger.html#a5c77662c2b85e1b7913d5a1234532ed3">Warn</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *pchFormat, ...);</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="classsteamvrbridge_1_1_logger.html#afb93aa70f8900f65478a0d034a0bb249">Error</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *pchFormat, ...);</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    };</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;}</div>
-<div class="ttc" id="classsteamvrbridge_1_1_logger_html"><div class="ttname"><a href="classsteamvrbridge_1_1_logger.html">steamvrbridge::Logger</a></div><div class="ttdef"><b>Definition:</b> logger.h:11</div></div>
-<div class="ttc" id="classsteamvrbridge_1_1_logger_html_aac2bf150e852a99a38a0946a734184cc"><div class="ttname"><a href="classsteamvrbridge_1_1_logger.html#aac2bf150e852a99a38a0946a734184cc">steamvrbridge::Logger::Info</a></div><div class="ttdeci">static void Info(const char *pchFormat,...)</div><div class="ttdef"><b>Definition:</b> logger.cpp:45</div></div>
+<div class="ttc" id="classsteamvrbridge_1_1_logger_html"><div class="ttname"><a href="classsteamvrbridge_1_1_logger.html">steamvrbridge::Logger</a></div><div class="ttdef"><b>Definition:</b> logger.h:9</div></div>
+<div class="ttc" id="classsteamvrbridge_1_1_logger_html_afc2cbc286ae323679720cfc3b2638900"><div class="ttname"><a href="classsteamvrbridge_1_1_logger.html#afc2cbc286ae323679720cfc3b2638900">steamvrbridge::Logger::Debug</a></div><div class="ttdeci">static void Debug(const char *pchFormat,...)</div><div class="ttdef"><b>Definition:</b> logger.cpp:77</div></div>
+<div class="ttc" id="classsteamvrbridge_1_1_logger_html_afb93aa70f8900f65478a0d034a0bb249"><div class="ttname"><a href="classsteamvrbridge_1_1_logger.html#afb93aa70f8900f65478a0d034a0bb249">steamvrbridge::Logger::Error</a></div><div class="ttdeci">static void Error(const char *pchFormat,...)</div><div class="ttdef"><b>Definition:</b> logger.cpp:68</div></div>
+<div class="ttc" id="classsteamvrbridge_1_1_logger_html_aac2bf150e852a99a38a0946a734184cc"><div class="ttname"><a href="classsteamvrbridge_1_1_logger.html#aac2bf150e852a99a38a0946a734184cc">steamvrbridge::Logger::Info</a></div><div class="ttdeci">static void Info(const char *pchFormat,...)</div><div class="ttdef"><b>Definition:</b> logger.cpp:50</div></div>
+<div class="ttc" id="classsteamvrbridge_1_1_logger_html_a5c77662c2b85e1b7913d5a1234532ed3"><div class="ttname"><a href="classsteamvrbridge_1_1_logger.html#a5c77662c2b85e1b7913d5a1234532ed3">steamvrbridge::Logger::Warn</a></div><div class="ttdeci">static void Warn(const char *pchFormat,...)</div><div class="ttdef"><b>Definition:</b> logger.cpp:59</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

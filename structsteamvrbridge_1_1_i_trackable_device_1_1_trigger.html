@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
-<title>“PSMoveSteamVRBridge”: steamvrbridge::TrackableDevice::Axis Struct Reference</title>
+<title>“PSMoveSteamVRBridge”: steamvrbridge::ITrackableDevice::Trigger Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -37,6 +37,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -70,7 +71,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -81,26 +82,29 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>steamvrbridge</b></li><li class="navelem"><a class="el" href="classsteamvrbridge_1_1_trackable_device.html">TrackableDevice</a></li><li class="navelem"><a class="el" href="structsteamvrbridge_1_1_trackable_device_1_1_axis.html">Axis</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespacesteamvrbridge.html">steamvrbridge</a></li><li class="navelem"><a class="el" href="classsteamvrbridge_1_1_i_trackable_device.html">ITrackableDevice</a></li><li class="navelem"><a class="el" href="structsteamvrbridge_1_1_i_trackable_device_1_1_trigger.html">Trigger</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-attribs">Public Attributes</a> &#124;
-<a href="structsteamvrbridge_1_1_trackable_device_1_1_axis-members.html">List of all members</a>  </div>
+<a href="structsteamvrbridge_1_1_i_trackable_device_1_1_trigger-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">steamvrbridge::TrackableDevice::Axis Struct Reference</div>  </div>
+<div class="title">steamvrbridge::ITrackableDevice::Trigger Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a6e94d73d2dcadb7b1020296e1fcec6d9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6e94d73d2dcadb7b1020296e1fcec6d9"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><b>x</b> = 0.0f</td></tr>
-<tr class="separator:a6e94d73d2dcadb7b1020296e1fcec6d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac3719f5ea579eef8b6faa370a781d9a9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac3719f5ea579eef8b6faa370a781d9a9"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><b>y</b> = 0.0f</td></tr>
-<tr class="separator:ac3719f5ea579eef8b6faa370a781d9a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a390cbda6d947b991b8dd31da0796068a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a390cbda6d947b991b8dd31da0796068a"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>isPressed</b> = false</td></tr>
+<tr class="separator:a390cbda6d947b991b8dd31da0796068a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50d2f5dd283d86e92f82096c0c2e5057"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a50d2f5dd283d86e92f82096c0c2e5057"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>isTouched</b> = false</td></tr>
+<tr class="separator:a50d2f5dd283d86e92f82096c0c2e5057"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a052879a4e3b6f83d2b424e28f5c71926"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a052879a4e3b6f83d2b424e28f5c71926"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>value</b> = 0.0f</td></tr>
+<tr class="separator:a052879a4e3b6f83d2b424e28f5c71926"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li>src/main/cpp/driver/<a class="el" href="trackable__device_8h_source.html">trackable_device.h</a></li>

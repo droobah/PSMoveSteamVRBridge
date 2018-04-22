@@ -37,6 +37,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -70,7 +71,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -81,7 +82,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>steamvrbridge</b></li><li class="navelem"><a class="el" href="classsteamvrbridge_1_1_utils.html">Utils</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespacesteamvrbridge.html">steamvrbridge</a></li><li class="navelem"><a class="el" href="classsteamvrbridge_1_1_utils.html">Utils</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -119,6 +120,12 @@ static PSMQuatf&#160;</td><td class="memItemRight" valign="bottom"><b>ExtractPSM
 <tr class="memitem:a29a2eaefe762626b99885f00a97f2777"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a29a2eaefe762626b99885f00a97f2777"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>GetMetersPosInRotSpace</b> (const PSMQuatf *rotation, PSMVector3f *out_position, const PSMPSMove &amp;view)</td></tr>
 <tr class="separator:a29a2eaefe762626b99885f00a97f2777"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5ca6d843a394c2adc836d6eceda455c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa5ca6d843a394c2adc836d6eceda455c"></a>
+static PSMPosef&#160;</td><td class="memItemRight" valign="bottom"><b>Utils::GetHMDPoseInMeters</b> ()</td></tr>
+<tr class="separator:aa5ca6d843a394c2adc836d6eceda455c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad16abfd9b5a31872ccfc2bda6bde975d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad16abfd9b5a31872ccfc2bda6bde975d"></a>
+static PSMPosef&#160;</td><td class="memItemRight" valign="bottom"><b>Utils::RealignHMDTrackingSpace</b> (PSMQuatf controllerOrientationInHmdSpaceQuat, PSMVector3f controllerLocalOffsetFromHmdPosition, PSMControllerID controllerId, PSMPosef hmd_pose_meters, bool useControllerOrientation)</td></tr>
+<tr class="separator:ad16abfd9b5a31872ccfc2bda6bde975d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5ddc5dd249545c9b8b5da5b70f98acdf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5ddc5dd249545c9b8b5da5b70f98acdf"></a>
 static PSMQuatf&#160;</td><td class="memItemRight" valign="bottom"><b>openvrMatrixExtractPSMQuatf</b> (const vr::HmdMatrix34_t &amp;openVRTransform)</td></tr>
 <tr class="separator:a5ddc5dd249545c9b8b5da5b70f98acdf"><td class="memSeparator" colspan="2">&#160;</td></tr>

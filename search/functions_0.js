@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['getcurrentoverlaytype',['GetCurrentOverlayType',['../class_c_p_s_move_driver_monitor.html#a7b4fc025ccbf77f2b84225b51ef5c2a5',1,'CPSMoveDriverMonitor']]]
+  ['debug',['Debug',['../classsteamvrbridge_1_1_logger.html#afc2cbc286ae323679720cfc3b2638900',1,'steamvrbridge::Logger']]]
 ];

@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['trackabledevice',['TrackableDevice',['../classsteamvrbridge_1_1_trackable_device.html',1,'steamvrbridge']]],
-  ['trackpad',['TrackPad',['../structsteamvrbridge_1_1_trackable_device_1_1_track_pad.html',1,'steamvrbridge::TrackableDevice']]],
-  ['trigger',['Trigger',['../structsteamvrbridge_1_1_trackable_device_1_1_trigger.html',1,'steamvrbridge::TrackableDevice']]]
+  ['psmovecontroller',['PSMoveController',['../classsteamvrbridge_1_1_p_s_move_controller.html',1,'steamvrbridge']]],
+  ['psmservicetracker',['PSMServiceTracker',['../classsteamvrbridge_1_1_p_s_m_service_tracker.html',1,'steamvrbridge']]]
 ];

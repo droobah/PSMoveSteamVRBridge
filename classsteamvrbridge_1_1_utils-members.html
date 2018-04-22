@@ -37,6 +37,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -70,7 +71,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -81,7 +82,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>steamvrbridge</b></li><li class="navelem"><a class="el" href="classsteamvrbridge_1_1_utils.html">Utils</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespacesteamvrbridge.html">steamvrbridge</a></li><li class="navelem"><a class="el" href="classsteamvrbridge_1_1_utils.html">Utils</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -111,6 +112,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>psmVector3fDistance</b>(const PSMVector3f &amp;a, const PSMVector3f &amp;b) (defined in <a class="el" href="classsteamvrbridge_1_1_utils.html">steamvrbridge::Utils</a>)</td><td class="entry"><a class="el" href="classsteamvrbridge_1_1_utils.html">steamvrbridge::Utils</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
   <tr bgcolor="#f0f0f0"><td class="entry"><b>psmVector3fLerp</b>(const PSMVector3f &amp;a, const PSMVector3f &amp;b, float u) (defined in <a class="el" href="classsteamvrbridge_1_1_utils.html">steamvrbridge::Utils</a>)</td><td class="entry"><a class="el" href="classsteamvrbridge_1_1_utils.html">steamvrbridge::Utils</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
   <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>PSMVector3fToString</b>(const PSMVector3f &amp;position) (defined in <a class="el" href="classsteamvrbridge_1_1_utils.html">steamvrbridge::Utils</a>)</td><td class="entry"><a class="el" href="classsteamvrbridge_1_1_utils.html">steamvrbridge::Utils</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>Utils::GetHMDPoseInMeters</b>() (defined in <a class="el" href="classsteamvrbridge_1_1_utils.html">steamvrbridge::Utils</a>)</td><td class="entry"><a class="el" href="classsteamvrbridge_1_1_utils.html">steamvrbridge::Utils</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>Utils::RealignHMDTrackingSpace</b>(PSMQuatf controllerOrientationInHmdSpaceQuat, PSMVector3f controllerLocalOffsetFromHmdPosition, PSMControllerID controllerId, PSMPosef hmd_pose_meters, bool useControllerOrientation) (defined in <a class="el" href="classsteamvrbridge_1_1_utils.html">steamvrbridge::Utils</a>)</td><td class="entry"><a class="el" href="classsteamvrbridge_1_1_utils.html">steamvrbridge::Utils</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
